@@ -9,6 +9,9 @@ public class TryCatch {
 		
 		try {
 			
+		}catch(NumberFormatException e) {
+			
+			System.out.println("문자열이 나타내는 숫자와 일치하지 않는 타입의 숫자로 변환시 발생  ");
 		}catch (ArrayIndexOutOfBoundsException e) {
 			
 			System.out.println("인덱스를 벗어났습니다");
@@ -21,6 +24,9 @@ public class TryCatch {
 		}catch(IllegalArgumentException e) {
 			
 			System.out.println("잘못된 인자를 전달 ");
+		}catch(Exception e) {
+			
+			System.out.println("오류 발생");
 		}
 		
 		return null;
