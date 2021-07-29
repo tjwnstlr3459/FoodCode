@@ -8,8 +8,6 @@ public class DataType1 {
 	public static void main(String args[]) {
 		
 		//문제 1 > 입력받은 화씨를 섭씨로 변환해 출력하는 자바프로그램 작성.
-		// 1) 입력을 문자열로 받을 것인지, 실수로 받을 것인지 구분
-		// 2) 문자열인 경우 숫자와 '.'만이 존재하는 지 처리 / 실수인 경우 숫자와 '.' 이외의 값이 존재하는지 처리
 		// 3) 화씨(F) > 섭씨(C) 공식 : (inputValue - 32) * 5 / 9
 		
 		//1. 변수, 클래스 정의
@@ -24,8 +22,13 @@ public class DataType1 {
 		
 		//3. 검증, 예외 처리 단계
 		inputFahrenheit = errorTest(sc);
+		sc.close();
 		
 		//4. 비지니스 로직 및 결과 처리
+		resultCelsius = fahrenheitToCelsius(inputFahrenheit);
+		
+		//결과 출력
+		printResult(inputFahrenheit, resultCelsius);
 		
 		
 	}
@@ -60,14 +63,24 @@ public class DataType1 {
 		}
 	}
 	//전달 받은 화씨를 섭씨로 변환 후 전달 해주는 메소드
-	public double fahrenheitToCelsius(double fahrenheit) {
+	public static double fahrenheitToCelsius(double fahrenheit) {
 		 
 		//1. 변수, 클래스 정의
+		double celsius;
 		
 		//2. 변수, 클래스 초기화
+		celsius = 0;
 		
-		 
+		//3. 검증, 예외처리 단계
 		
-		return 0.1;
+		//4. 비지니스 로직 및 결과 처리
+		fahrenheit = Math.round(fahrenheit*10)/10.0;		//3자리 이상의 소수점을 반올림하여 3자리 까지만 표현
+		celsius = (fahrenheit - 32) * 5 / 9;
+		return celsius;
+	}
+	
+	//결과 출력 메소드
+	public static void printResult(double inputFahrenheit, double resultCelsius) {
+		System.out.printf("%.1f degree Fahrenheit equal to %.1f in Celsius", inputFahrenheit, resultCelsius);
 	}
 }
