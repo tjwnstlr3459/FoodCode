@@ -8,7 +8,7 @@ import junsikService.Condition25Service;
 public class Condition25 {
 	public static void main(String args[]) {
 		
-		//설정한 높이 값을 이용한 숫자로 형성 된 다이아몬드 
+		//25. 설정한 높이 값을 이용한 숫자로 형성 된 다이아몬드 
 		
 		//변수 선언
 		Scanner sc;
