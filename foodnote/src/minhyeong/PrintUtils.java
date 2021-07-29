@@ -1,6 +1,6 @@
 package minhyeong;
 
-public class PrintOption {
+public class PrintUtils {
 
 	//매개변수를 출력시켜주는 메소드
 	public static void messageToPrint(String msg) {

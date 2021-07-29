@@ -12,13 +12,13 @@ public class DataType3 {
 		//
 		
 		//1. 변수, 클래스 정의
-		InputOption iO;
+		InputUtils iO;
 		String inputMessage, inputValue, errorMsg;		//입력받은 값을 대입할 변수, 에러 메세지 변수
 		boolean inputCheck;								//입력값이 프로그램 로직에 정상인 값인지 아닌지 판별하는 변수
 		int resultInteger;								//변환 공식까지 완료된 결과를 대입할 변수
 		
 		//2. 변수, 클래스 초기화
-		iO = new InputOption();
+		iO = new InputUtils();
 		inputMessage = "input Integer : ";
 		inputValue = "";
 		inputCheck = false;
@@ -27,9 +27,9 @@ public class DataType3 {
 		
 		//3. 검증, 예외처리 단계
 		//입력 받기위한 문장을 전달하고 값 받아오는 메소드 호출
-		inputValue = InputOption.inputMessageToPrint(inputMessage);
+		inputValue = InputUtils.inputMessageToPrint(inputMessage);
 		//입력값에서 공백을 제거 메소드 호출
-		inputValue = InputOption.replaceInput(inputValue);
+		inputValue = InputUtils.replaceInput(inputValue);
 		//입력값이 숫자만 존재하는지 아닌지 판별 메소드 호출
 		inputCheck = iO.inputWhoIntegerCheck(inputValue);
 		
@@ -45,13 +45,13 @@ public class DataType3 {
 			}else {
 				
 				errorMsg = "please 0 between 1000 integer!";
-				PrintOption.messageToPrint(errorMsg);
+				PrintUtils.messageToPrint(errorMsg);
 				return;
 			}
 		}else {
 			
 			errorMsg = "please input integer...";
-			PrintOption.messageToPrint(errorMsg);
+			PrintUtils.messageToPrint(errorMsg);
 			return;
 		}
 		
@@ -60,7 +60,7 @@ public class DataType3 {
 		//입력된 정수 하나하나를 더하는 메소드 호출
 		resultInteger = intPlusBetween(inputValue);
 		//결과 처리
-		PrintOption.messageToPrint("The sum of all digits in "+inputValue+" is "+resultInteger);
+		PrintUtils.messageToPrint("The sum of all digits in "+inputValue+" is "+resultInteger);
 		//return
 	}
 	

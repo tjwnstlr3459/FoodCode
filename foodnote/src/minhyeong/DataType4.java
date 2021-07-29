@@ -10,7 +10,7 @@ public class DataType4 {
 		
 		//1. 변수,클래스 정의
 		HashMap<String, Integer> dateMap;
-		InputOption iO;
+		InputUtils iO;
 		String inputMessage, inputValue, errorMsg;
 		boolean inputCheck;
 		int year, day;
@@ -18,7 +18,7 @@ public class DataType4 {
 		
 		//2. 변수, 클래스 초기화
 		dateMap = new HashMap<String, Integer>();
-		iO = new InputOption();
+		iO = new InputUtils();
 		inputMessage = "input Minutes : ";
 		inputValue = "";
 		inputCheck = false;
@@ -29,9 +29,9 @@ public class DataType4 {
 		
 		//3. 검증, 예외 처리 단계
 		//메세지를 전달해서 입력을 받아오는 메소드 호출
-		inputValue = InputOption.inputMessageToPrint(inputMessage);
+		inputValue = InputUtils.inputMessageToPrint(inputMessage);
 		//공백이 존재할 수도 있기 때문에 제거하는 메소드 호출
-		inputValue = InputOption.replaceInput(inputValue);
+		inputValue = InputUtils.replaceInput(inputValue);
 		//공백제거 후 정수만 존재하는 지 판별하는 메소드 호출
 		inputCheck = iO.inputWhoIntegerCheck(inputValue);
 		
@@ -42,7 +42,7 @@ public class DataType4 {
 		//적합하지 않은 경우
 		}else {
 			
-			PrintOption.messageToPrint(errorMsg);
+			PrintUtils.messageToPrint(errorMsg);
 			return;
 		}
 		
@@ -51,7 +51,7 @@ public class DataType4 {
 		dateMap = CastDate(minutes);
 		year = dateMap.get("year");
 		day = dateMap.get("day");
-		PrintOption.messageToPrint(inputValue+"분을 년,월로 계산하면 "+year+"년 "+day+"일 입니다.");
+		PrintUtils.messageToPrint(inputValue+"분을 년,월로 계산하면 "+year+"년 "+day+"일 입니다.");
 	}
 	
 	//분을 월 , 년으로 변환하는 메소드

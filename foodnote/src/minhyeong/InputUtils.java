@@ -3,13 +3,13 @@ package minhyeong;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
-public class InputOption {
+public class InputUtils {
 
 	//멤버(전역)변수, 클래스 정의
 	private String regPatternInt;		//정규표현식 - 정수
 	
 	//멤버(전역)변수, 클래스 초기화
-	public InputOption() {
+	public InputUtils() {
 		super();
 		regPatternInt = "^[0-9]*$";
 	}
