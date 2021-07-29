@@ -1,17 +1,20 @@
 package junsikService;
 
 import java.util.ArrayList;
-import java.util.Collections;
 
 public class Test3Service {
-	public int Check(String str, ArrayList<String> arr, int sum) {
+	public int Check(String str) {
 		
 		//리턴값 선언
 		int result;
+		int sum;
+		ArrayList<String> arr;
 		
 		//초기화
 		result = -1;
-			
+		sum = 0;
+		arr = new ArrayList<>();
+		
 		//검증
 		try {
 			
@@ -45,5 +48,30 @@ public class Test3Service {
 		}
 		
 		return result;
+	}
+	
+	//질문1
+	public void que1() {
+		//변수 선언
+		String que1;
+		
+		//초기화
+		que1 = "1~1000 사이의 정수를 입력 : ";
+		
+		//로직
+		System.out.print(que1);
+		
+	}
+	
+	//질문2
+	public void que2() {
+		//변수 선언
+		String que2;
+		
+		//초기화
+		que2 = "다시 입력해 주세요";
+		
+		//동작로직
+		System.out.println(que2);
 	}
 }
