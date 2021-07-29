@@ -20,22 +20,26 @@ public class Condition19 {
 		//동작로직
 		while(true) {
 			
+			//피라미드 높이 정수 입력
 			service.que1();
-			str = sc.next();
+			str = sc.nextLine();
 			
 			if(str == null) {
 				
+				//높이를 정수로 입력해주세요
 				service.que2();
 			}else {
 				
+				//검증 및 실행 로직
 				int result = service.check(str);
+				
+				//검증 성공시 while문 종료
 				if(result>0){
 					break;	
 				}
 				
 			}
 		}
-		
 		sc.close();
 	}
 }

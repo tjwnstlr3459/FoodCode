@@ -5,8 +5,8 @@ public class Test1Service {
 		
 		//리턴값 선언
 		int result;
-		double f;
-		double ondo;
+		double f;		//화씨를 받기위한 변수
+		double ondo;	//섭씨를 받기위한 변수
 		
 		//초기화
 		result = -1;
