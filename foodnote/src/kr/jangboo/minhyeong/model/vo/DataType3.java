@@ -1,10 +1,10 @@
-package minhyeong;
+package kr.jangboo.minhyeong.model.vo;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import minhyeong.util.InputUtils;
-import minhyeong.util.PrintUtils;
+import kr.jangboo.minhyeong.util.InputUtils;
+import kr.jangboo.minhyeong.util.PrintUtils;
 
 public class DataType3 {
 

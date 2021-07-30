@@ -1,9 +1,9 @@
-package minhyeong;
+package kr.jangboo.minhyeong.model.vo;
 
 import java.util.HashMap;
 
-import minhyeong.util.InputUtils;
-import minhyeong.util.PrintUtils;
+import kr.jangboo.minhyeong.util.InputUtils;
+import kr.jangboo.minhyeong.util.PrintUtils;
 
 public class String43 {
 

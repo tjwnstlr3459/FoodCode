@@ -1,12 +1,12 @@
-package minhyeong;
+package kr.jangboo.minhyeong.model.vo;
 
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 
-import minhyeong.util.InputUtils;
-import minhyeong.util.PrintUtils;
+import kr.jangboo.minhyeong.util.InputUtils;
+import kr.jangboo.minhyeong.util.PrintUtils;
 
 public class Array1 {
 

@@ -1,7 +1,7 @@
-package minhyeong;
+package kr.jangboo.minhyeong.model.vo;
 
-import minhyeong.util.InputUtils;
-import minhyeong.util.PrintUtils;
+import kr.jangboo.minhyeong.util.InputUtils;
+import kr.jangboo.minhyeong.util.PrintUtils;
 
 public class ConditiUnalStatment24 {
 

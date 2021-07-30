@@ -1,4 +1,4 @@
-package minhyeong.util;
+package kr.jangboo.minhyeong.util;
 
 public class PrintUtils {
 

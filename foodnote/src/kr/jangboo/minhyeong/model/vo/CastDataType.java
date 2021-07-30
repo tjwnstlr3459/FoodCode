@@ -1,6 +1,6 @@
-package minhyeong;
+package kr.jangboo.minhyeong.model.vo;
 
-import minhyeong.util.PrintUtils;
+import kr.jangboo.minhyeong.util.PrintUtils;
 
 public class CastDataType {
 

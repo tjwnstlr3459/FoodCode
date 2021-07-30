@@ -1,4 +1,4 @@
-package minhyeong;
+package kr.jangboo.minhyeong.model.vo;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
