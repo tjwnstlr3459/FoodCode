@@ -1,6 +1,6 @@
 package junsikCon;
 
-public class teacher {
+public class teach {
 
 	//변수명 영어로 줄일땐 영어 자음만 줄여서
 	//string.format 으로공백 할 필요 없이 문자열 자체에 공백을 같이 넣을수 있다
