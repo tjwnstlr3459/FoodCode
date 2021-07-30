@@ -3,30 +3,33 @@ package minhyeong;
 import minhyeong.util.InputUtils;
 import minhyeong.util.PrintUtils;
 
-public class ConditionalStatment24 {
+public class ConditiUnalStatment24 {
 
 	public static void main(String args[]) {
 		
 		//조건문 문제 25 > 다이아몬드 출력  문자는 '*' 이 아닌 숫자로 표현
 		//
 		int line, spaceNum, number;
-		String space, inputMessage, inputValue, msg;
+		String space, inputMessage, regPattern, inputValue, msg;
 		boolean inputCheck;
-		InputUtils iO;
+		InputUtils iU;
 		//
 		inputMessage = "input integer : ";
 		inputValue = "";
 		inputCheck = false;
 		msg = "";
-		iO = new InputUtils();
+		iU = new InputUtils();
 		space = "";
 		line = 0;
 		spaceNum = 0;
 		number = 1;
+		regPattern = "";
 		//
 		inputValue = InputUtils.inputMessageToPrint(inputMessage);
 		inputValue = InputUtils.replaceInput(inputValue);
-		inputCheck = iO.inputWhoIntegerCheck(inputValue);
+		regPattern = "^[\\d]*$";
+		iU.setRegPattern(regPattern);
+		inputCheck = iU.inputValueCheckInteger(inputValue);
 		if(inputCheck) {
 			
 			line = CastDataType.stringToInteger(inputValue);
@@ -59,7 +62,6 @@ public class ConditionalStatment24 {
 				
 				System.out.print(String.format("%"+spaceNum+"s", space));
 			}
-			
 			//숫자 출력
 			if(number == 1) {
 
@@ -77,8 +79,7 @@ public class ConditionalStatment24 {
 				}
 			}
 			number++;
-			
-			
+
 			// 뒷 공백 출력
 			if(spaceNum == 0) {
 				
@@ -122,7 +123,6 @@ public class ConditionalStatment24 {
 			}
 			number--;
 			
-			
 			// 뒷 공백 출력
 			if(spaceNum == 0) {
 				
@@ -132,9 +132,7 @@ public class ConditionalStatment24 {
 				spaceNum++;
 			}
 			System.out.println();
-
-		}
-		
+		}	
 	}
 	
 	

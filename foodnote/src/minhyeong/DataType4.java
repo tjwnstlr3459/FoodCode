@@ -36,7 +36,7 @@ public class DataType4 {
 		//공백이 존재할 수도 있기 때문에 제거하는 메소드 호출
 		inputValue = InputUtils.replaceInput(inputValue);
 		//공백제거 후 정수만 존재하는 지 판별하는 메소드 호출
-		inputCheck = iO.inputWhoIntegerCheck(inputValue);
+		inputCheck = iO.inputValueCheckInteger(inputValue);
 		
 		//판별 후 프로그램이 실행되기에 적합한 값인 경우
 		if(inputCheck) {

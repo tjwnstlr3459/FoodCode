@@ -15,13 +15,15 @@ public class DataType3 {
 		//
 		
 		//1. 변수, 클래스 정의
-		InputUtils iO;
-		String inputMessage, inputValue, errorMsg;		//입력받은 값을 대입할 변수, 에러 메세지 변수
+		InputUtils iU;
+		String regPattern, inputMessage, inputValue, errorMsg;		//입력받은 값을 대입할 변수, 에러 메세지 변수
 		boolean inputCheck;								//입력값이 프로그램 로직에 정상인 값인지 아닌지 판별하는 변수
 		int resultInteger;								//변환 공식까지 완료된 결과를 대입할 변수
 		
 		//2. 변수, 클래스 초기화
-		iO = new InputUtils();
+		iU = new InputUtils();
+		regPattern = "^[0-9]*$";
+		iU.setRegPattern(regPattern);
 		inputMessage = "input Integer : ";
 		inputValue = "";
 		inputCheck = false;
@@ -34,7 +36,7 @@ public class DataType3 {
 		//입력값에서 공백을 제거 메소드 호출
 		inputValue = InputUtils.replaceInput(inputValue);
 		//입력값이 숫자만 존재하는지 아닌지 판별 메소드 호출
-		inputCheck = iO.inputWhoIntegerCheck(inputValue);
+		inputCheck = iU.inputValueCheckInteger(inputValue);
 		
 		if(inputCheck) {
 		
