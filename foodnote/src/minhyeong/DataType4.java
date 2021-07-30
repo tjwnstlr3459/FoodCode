@@ -2,6 +2,9 @@ package minhyeong;
 
 import java.util.HashMap;
 
+import minhyeong.util.InputUtils;
+import minhyeong.util.PrintUtils;
+
 public class DataType4 {
 	
 	public static void main(String args[]) {

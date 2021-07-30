@@ -3,6 +3,9 @@ package minhyeong;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import minhyeong.util.InputUtils;
+import minhyeong.util.PrintUtils;
+
 public class DataType3 {
 
 	public static void main(String args[]) {

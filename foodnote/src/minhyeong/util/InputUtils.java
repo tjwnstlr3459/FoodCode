@@ -1,4 +1,4 @@
-package minhyeong;
+package minhyeong.util;
 
 import java.util.Scanner;
 import java.util.regex.Pattern;

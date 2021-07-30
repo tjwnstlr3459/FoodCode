@@ -1,5 +1,7 @@
 package minhyeong;
 
+import minhyeong.util.PrintUtils;
+
 public class CastDataType {
 
 	//문자열을 정수로 변환하는 메소드

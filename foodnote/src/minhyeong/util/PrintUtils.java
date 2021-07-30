@@ -1,4 +1,4 @@
-package minhyeong;
+package minhyeong.util;
 
 public class PrintUtils {
 
