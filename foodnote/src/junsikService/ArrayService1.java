@@ -187,8 +187,10 @@ public class ArrayService1 {
 
 		// 메뉴번호에 해당하는 배열 정렬
 		if (menuNum == 1) {
+			
 			Collections.sort(arrNum);
 		} else {
+			
 			Collections.sort(arrStr);
 		}
 

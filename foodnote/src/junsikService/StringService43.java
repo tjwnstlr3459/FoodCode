@@ -77,5 +77,4 @@ public class StringService43 {
 	public void beanStrPirnt() {
 		System.out.println("모든 문자열이 동일합니다.");
 	}
-
 }
