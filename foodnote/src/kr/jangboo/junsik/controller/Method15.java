@@ -13,7 +13,7 @@ public class Method15 {
 		//1970년 1월 1일부터 경과한 시간을 밀리세컨 타입으로 리턴 1/1000 초
 		long curTimeMillis = System.currentTimeMillis();
 		
-		
+
 		//curTimeMillis 검증
 		int result = Check.tryCatch(curTimeMillis);
 		
