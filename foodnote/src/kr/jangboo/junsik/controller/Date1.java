@@ -35,7 +35,7 @@ public class Date1 {
 		dateVo.setDate(day);
 		dateVo.setDayNum(dayNum);
 
-		//dateVo값 검증
+		//dateVo값 참/거짓 확인
 		if(check(dateVo)) {
 			
 			//날짜 대입
@@ -50,7 +50,7 @@ public class Date1 {
 	}
 	
 	
-	//dateVo값 검증
+	//dateVo값 null체크
 	public static boolean check(Date dateVo) {
 		
 		boolean result = true;
