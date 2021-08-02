@@ -34,7 +34,7 @@ public class InputUtils {
 	}
 	
 	//입력받은 값이 문자열에서 정수만 존재하는지 아닌지 판별하는 메소드
-	public boolean inputValueCheckInteger(String inputValue) {
+	public boolean inputValueCheck(String inputValue) {
 		
 		//Pattern regPattern;								//정규표현식을 이용한 대상이 되는 문자열의 패턴을 검증하는 클래스
 		//Matcher patternMatcher;							//생성된 패턴을 대상 문자열과 판별하기 위한 클래스

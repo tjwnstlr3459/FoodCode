@@ -6,13 +6,28 @@ import kr.jangboo.minhyeong.model.vo.Calendar1;
 
 public class Calendar1Service {
 
-	public Calendar insertMyCal(Calendar cld, Calendar1 myCal) {
+	public boolean nullCheck(Calendar1 myCld) {
 		
-		cld.set(Calendar.YEAR, myCal.getYear());
-		cld.set(Calendar.MONTH, myCal.getMonth());
-		cld.set(Calendar.DATE, myCal.getDate());
+		if(myCld == null) {
+			
+			return false;
+		}else {
+			
+			return true;
+		}
+	}
+	public Calendar insertCld(Calendar1 myCld) {
+		
+		Calendar cld;
+		
+		cld = Calendar.getInstance();
+		
+		cld.set(Calendar.YEAR, myCld.getYear());
+		cld.set(Calendar.MONTH, myCld.getMonth());
+		cld.set(Calendar.DATE, myCld.getDate());
 		return cld;
 	}
+
 
 	
 

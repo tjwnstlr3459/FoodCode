@@ -1,6 +1,7 @@
 package kr.jangboo.minhyeong.view;
 
 import kr.jangboo.minhyeong.controller.Method1Controller;
+import kr.jangboo.minhyeong.model.vo.Method1;
 import kr.jangboo.minhyeong.util.PrintUtils;
 
 public class Method1View {
@@ -11,6 +12,7 @@ public class Method1View {
 		
 		//변수 , 클래스 정의
 		int firstNum, secondNum, thirdNum, resultNum;
+		Method1 mt1;
 		Method1Controller cntrl;
 		String msg;
 		
@@ -19,11 +21,15 @@ public class Method1View {
 		secondNum = 12;
 		thirdNum = 12;
 		cntrl = new Method1Controller();
+		mt1 = new Method1();
+		mt1.setFirstNum(firstNum);
+		mt1.setSecondNum(secondNum);
+		mt1.setThirdNum(thirdNum);
 		
 		//검증, 예외 처리
 		
 		//비지니스 로직
-		resultNum = cntrl.smallestNumber(firstNum, secondNum, thirdNum);
+		resultNum = cntrl.smallestNumber(mt1);
 		//결과 처리
 		msg = "The Smallest Value is : " + resultNum;
 		PrintUtils.messageToPrint(msg);
