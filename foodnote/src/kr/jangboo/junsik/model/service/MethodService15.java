@@ -87,4 +87,19 @@ public class MethodService15 {
 			}
 			return weekName;
 		}
+		
+		public void msg() {
+			System.out.println("curTimeMillis값이 비정상입니다.");
+		}
 }
+
+
+
+
+
+
+
+
+
+
+
