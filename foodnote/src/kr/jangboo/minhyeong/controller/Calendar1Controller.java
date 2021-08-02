@@ -15,9 +15,9 @@ public class Calendar1Controller {
 		//1. 변수, 클래스 정의
 		int year, month, date;
 		boolean nullCheck;
-		Calendar1 myCal;
+		Calendar1 myCld;
 		Calendar1Service service;
-		Calendar cal;
+		Calendar cld;
 		String msg;
 		
 		//2. 변수, 클래스 초기화
@@ -27,38 +27,38 @@ public class Calendar1Controller {
 		date = 1;
 		//----------------------
 		nullCheck = false;					//검증 논리형 변수
-		myCal = new Calendar1();			//입력 또는 초기값 저장 클래스(객체)
+		myCld = new Calendar1();			//입력 또는 초기값 저장 클래스(객체)
 		msg = "";
 		
 		//3. 검증, 예외 처리
-		nullCheck = verification(myCal);
+		nullCheck = verification(myCld);
 		if(nullCheck) {
 			
-			myCal.setYear(year);
-			myCal.setMonth(month);
-			myCal.setDate(date);
+			myCld.setYear(year);
+			myCld.setMonth(month);
+			myCld.setDate(date);
 		}else {
 			
 			return;
 		}
 		
 		//4. 비지니스 로직
-		service = new Calendar1Service();	//비지니스 로직 수행 service클래스
-		cal = Calendar.getInstance();
-		cal = service.insertMyCal(cal, myCal);
+		service = new Calendar1Service();		//비지니스 로직 수행 service클래스
+		cld = Calendar.getInstance();			//Calendar클래스 
+		cld = service.insertMyCal(cld, myCld);
 		//결과 출력
-		msg = "Year : " + cal.get(Calendar.YEAR) + " / Month : " + cal.get(Calendar.MONTH) + " / Date : " + cal.get(Calendar.DATE);
+		msg = "Year : " + cld.get(Calendar.YEAR) + " / Month : " + cld.get(Calendar.MONTH) + " / Date : " + cld.get(Calendar.DATE);
 		PrintUtils.messageToPrint(msg);
 		
 	}
 	
-	public static boolean verification(Calendar1 myCal) {
+	public static boolean verification(Calendar1 myCld) {
 		
 		String msg;
 		
 		msg = "[Warning] Program Error : ";
 		
-		if(myCal == null) {
+		if(myCld == null) {
 			
 			PrintUtils.messageToPrint(msg);
 			return false;
