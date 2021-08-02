@@ -59,13 +59,17 @@ public class MethodService14 {
 		return apothemNum;
 	}
 	
+	
 	//오각형의 면적 공식
 	public double pentagonArea(int sideNum, double apothem) {
+		
         return  (sideNum * apothem * apothem) / (4 * Math.tan(Math.PI/sideNum));
     }
 	
+	
 	// side와 apothem이 적합하지 않을때 메세지
 	public void msg() {
+		
 		System.out.println("숫자가 정확하지 않습니다.");
 	}
 }
