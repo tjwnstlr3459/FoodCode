@@ -9,6 +9,10 @@ public class Date1 {
 		
 		// 1. Calendar 클래스를 사용하여 Date 객체를 생성
 		
+		// 1) 날짜 지정
+		// 2) vo 객체 생성
+		// 3) vo 객체 값 확인후 출력
+		
 		//변수 및 클래스 선언
 		Calendar cal;	
 		Date dateVo;

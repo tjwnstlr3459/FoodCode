@@ -10,16 +10,18 @@ public class DateController5 {
 		
 		// 5. 뉴욕의 현재 시간을 구하는 자바 프로그램
 		
-		//캘린더 및 변수 선언
-		Calendar calNewYork = Calendar.getInstance();
-		DateService5 service = new DateService5();
-		Date dateVo = new Date();
+		//클래스 및 변수 선언
+		Calendar calNewYork;
+		DateService5 service;
+		Date dateVo;
 		String timeZone;
 		String meridiem;
 		
 		//초기화 선언
+		calNewYork = Calendar.getInstance();
+		service = new DateService5();
+		dateVo = new Date();
 		timeZone = "America/New_York";
-		
 		
 		//뉴욕의 시간 저장
 		calNewYork.setTimeZone(TimeZone.getTimeZone(timeZone));
@@ -30,9 +32,10 @@ public class DateController5 {
 		dateVo.setMinute(calNewYork.get(Calendar.MINUTE));
 		dateVo.setSecond(calNewYork.get(Calendar.SECOND));
 		
-		// am, pm 가져오기
+		//service를 통해 오전 오후값 알아내기
 		meridiem = service.amPm(calNewYork);
 		
+		//오전 오후의 값이 들어있다면 시간 출력
 		if(meridiem != null) {
 			
 			System.out.println("뉴욕의 현재 시간 : " + 
