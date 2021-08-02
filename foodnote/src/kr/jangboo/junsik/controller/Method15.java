@@ -25,6 +25,10 @@ public class Method15 {
 			
 			// 방법2. 서비스에 SimpleDateFormat을 이용한 다른 방법
 			service.simpleCurTime(curTimeMillis);
+		}else {
+			
+			//curTimeMillis값 비정상일경우 출력
+			service.msg();
 		}
 	}
 }
