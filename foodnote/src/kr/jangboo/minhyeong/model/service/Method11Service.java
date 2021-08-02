@@ -2,6 +2,7 @@ package kr.jangboo.minhyeong.model.service;
 
 import java.util.regex.Pattern;
 
+import kr.jangboo.minhyeong.model.vo.Method11;
 import kr.jangboo.minhyeong.util.InputUtils;
 
 public class Method11Service {

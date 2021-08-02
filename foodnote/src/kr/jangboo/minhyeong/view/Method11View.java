@@ -14,7 +14,7 @@ public class Method11View {
 		Method11Controller cntrl;
 		//변수, 클래스 초기화
 		inputMsg = "1. 비밀번호는 8자 이상이어야합니다.\n2. 비밀번호는 문자와 숫자로만 구성됩니다.\n3.비밀번호는 2자리 이상 숫자를 포함해야합니다.\n비밀번호를 입력하세요.";
-		inputValue = "qwerqwer";
+		inputValue = "qwerqwer123";
 		verification = false;
 		cntrl = new Method11Controller();
 		
