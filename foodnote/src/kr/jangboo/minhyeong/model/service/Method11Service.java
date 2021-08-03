@@ -27,12 +27,11 @@ public class Method11Service {
 		
 		regPattern = "^[a-zA-Z0-9]{8,16}$";
 		iU = new InputUtils();
-		iU.setRegPattern(regPattern);
 		resultMatch = false;
 		numCount = 0;
 		msg = "";
 		
-		resultMatch = iU.inputValueCheck(inputValue);
+		resultMatch = InputUtils.inputValuePatternCheck(regPattern, inputValue);
 		if(resultMatch) {
 			
 			for(int i = 0; i < inputValue.length();i++) {

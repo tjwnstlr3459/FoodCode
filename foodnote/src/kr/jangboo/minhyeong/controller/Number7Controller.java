@@ -43,9 +43,11 @@ public class Number7Controller {
 		}
 		//4. 비지니스 로직
 		//list를  length와 같이 매개변수로 넘겨 주어 로직을 수행해 값을 받아온다.
-		lucasSequence = srvc.insertLucasSequence(lucasSequence, length);
-		//결과 view로 넘겨주기(응답 : response)
+		lucasSequence = srvc.insertLucasSequenceToList(lucasSequence, length);
+		//view로 결과(list) 넘겨주기(응답 : response)
 		view = new Number7View();
 		view.printLucasSequence(lucasSequence);
+		//프로그램 종료용 return
+		return;
 	}
 }
