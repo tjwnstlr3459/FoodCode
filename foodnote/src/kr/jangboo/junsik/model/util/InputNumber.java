@@ -16,12 +16,12 @@ public class InputNumber {
 
 	// 정규표현식 확인
 	public boolean isReqularExpNum(String numStr) {
-
+		
 		// 변수 및 클래스 선언
 		ReqularExpession reqExp;
 		reqExp = new ReqularExpession();
 		boolean result = false;
-
+		
 		// 정규표현식 적합한지 확인
 		if (numStr.matches(reqExp.onlyNum2())) {
 
