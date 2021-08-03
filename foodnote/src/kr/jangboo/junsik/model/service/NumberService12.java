@@ -2,6 +2,8 @@ package kr.jangboo.junsik.model.service;
 
 import java.util.ArrayList;
 
+import kr.jangboo.junsik.model.util.PrintMessage;
+
 public class NumberService12 {
 
 	//사용자에게 받은값 [하샤드 숫자]인지 [참/거짓]으로 확인하는 메소드
@@ -45,15 +47,18 @@ public class NumberService12 {
 	//하샤드 숫자가 [참/거짓]에 따른 출력
 	public void HarshadNumberValuePrint(boolean harshadNumberValue) {
 		
+		//하샤드 숫자인지 출력을 위한 [출력메소드]
+		PrintMessage printMessage = new PrintMessage();
+		String message;
+		
+		
 		//하샤드 숫자[참]
 		if(harshadNumberValue) {
-			
-			System.out.println("하샤드 숫자입니다.");
+			message = "하샤드 숫자입니다.";
 			
 		//하샤드 숫자[거짓]
 		}else {
-			
-			System.out.println("하샤드 숫자가 아닙니다.");
+			message = "하샤드 숫자가 아닙니다.";
 		}
 	}
 }

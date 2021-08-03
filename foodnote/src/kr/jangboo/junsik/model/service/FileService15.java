@@ -10,16 +10,19 @@ public class FileService15 {
 
 	//사용자에게 입력받을 문자열 받기
 	public String inputStr() {
-
+		
+		//클래스 선언
 		Scanner sc = new Scanner(System.in);
 		System.out.print("내용 입력 : ");
 		String inputStr = sc.nextLine();
+		
 		return inputStr;
 	}
 
 	//사용자로부터 받은 [경로]와 [입력내용]을 확인 후 저장하는 메소드
 	public boolean specifyFileLocation(String filePath, String inputStr) {
-
+		
+		//리턴값 변수 선언
 		boolean result = false;
 		
 		try {

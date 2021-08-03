@@ -13,6 +13,7 @@ public class FileController15 {
 		String filePath;
 		
 		//초기화
+		//파일 경로 지정
 		filePath = "C:/Users/SeoJunsik/Desktop/test.txt";
 		
 		

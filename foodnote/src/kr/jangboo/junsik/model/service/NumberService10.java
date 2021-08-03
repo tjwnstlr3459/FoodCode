@@ -10,13 +10,17 @@ public class NumberService10 {
 	
 	//사용자로부터 값 받고, 정규표현식으로 확인하는 메소드
 	public int inputNumber() {
+		
+		//변수 및 클래스 선언
 		Scanner sc;
 		ReqularExpession reqExp;
-		PrintMessage printMessage = new PrintMessage();
+		PrintMessage printMessage;
 		int num;
 		
+		//초기화
 		sc  = new Scanner(System.in);
 		reqExp = new ReqularExpession();
+		printMessage = new PrintMessage();
 		
 		//사용자로부터 입력값 정규표현식 검사
 		while(true) {
