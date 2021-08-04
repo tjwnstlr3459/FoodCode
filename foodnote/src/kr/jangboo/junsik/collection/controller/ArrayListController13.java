@@ -9,18 +9,20 @@ public class ArrayListController13 {
 		
 		// 13. 두 개의 배열 목록을 비교하는 Java 프로그램
 		
+		//클래스 선언
 		ArrayList<String> arrColorList1 = new ArrayList<String>();
 		ArrayList<String> arrColorList2 = new ArrayList<String>();
 		ArrayList<String> arrayComparison = new ArrayList<String>();
-		
 		ArrayListService13 service = new ArrayListService13();
 			
+		
 		//ArrayList1의 값을 가져온다
-		arrColorList1 = service.getArrayList1();
+		arrColorList1 = service.getArrayList1();//[red, yellow, green, blue, pupple]
+	
 		
 		//ArrayList2의 값을 가져온다
-		arrColorList2 = service.getArrayList2();
-
+		arrColorList2 = service.getArrayList2();//[red, yellow, green, black, pupple]
+		
 		
 		//arrList1의 반복문
 		for (String arr1 : arrColorList1) {
@@ -31,6 +33,7 @@ public class ArrayListController13 {
 		}
 		
 		//arr3에는 arr1과 arr2의 비교값이 출력된다
-		System.out.println(arrayComparison);
+		System.out.println(arrayComparison); //[O, O, O, X, O]
+		
 	}
 }
