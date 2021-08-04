@@ -8,7 +8,9 @@ import kr.jangboo.junsik.collection.service.HashSetService10;
 public class HashSetController10 {
 	public static void main(String[] args) {
 		
-		//두 해시 집합을 비교하는 Java 프로그램을 작성
+		// 10. 두 해시 집합을 비교하는 Java 프로그램을 작성
+		
+		//클래스 선언
 		HashSet<String> hashSet1 = new HashSet<String>();
 		HashSet<String> hashSet2 = new HashSet<String>();
 		ArrayList<String> hashSetResult = new ArrayList<String>();

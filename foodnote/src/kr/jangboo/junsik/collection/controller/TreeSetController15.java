@@ -6,12 +6,14 @@ import kr.jangboo.junsik.collection.service.TreeSetService15;
 
 public class TreeSetController15 {
 	public static void main(String[] args) {
-		// creating TreeSet
 		
-		TreeSet<Integer> treeheadset = new TreeSet<Integer>();
+		// 15. 트리 세트의 마지막 요소를 검색하고 제거
+		
+		//클래스 선언
 		TreeSet<Integer> treeNumList = new TreeSet<Integer>();
 		TreeSetService15 service = new TreeSetService15();
-		
+			
+		//트리
 		treeNumList = service.getTreeSetList();
 
 		System.out.println("treeNumList의 값들 : " + treeNumList);
