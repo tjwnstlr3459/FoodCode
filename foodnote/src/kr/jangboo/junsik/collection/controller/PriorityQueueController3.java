@@ -9,6 +9,10 @@ public class PriorityQueueController3 {
 	public static void main(String[] args) {
 		
 		//3. 우선순위 대기열인 배열에 ​​다른 배열을 합침으로서 우선순위 재정렬하기 
+		
+		// queue 		: 일반적인 FIFO방식
+		// PriorityQueue: 순서에 상관없이 우선순위가 높은 데이터가 먼저 나오는것
+		
 		PriorityQueueService3 service = new PriorityQueueService3();
 		PriorityQueue<Integer> queueLowFirstList = new PriorityQueue<Integer>();
 		PriorityQueue<Integer> queueHighFirstList;
@@ -16,9 +20,7 @@ public class PriorityQueueController3 {
 		//초기화(높은값 먼저 출력 후, 나머지값 출력)
 		queueHighFirstList = new PriorityQueue<Integer>(Collections.reverseOrder());
 		
-		
-		
-		
+
 		//낮은순의 PriorityQueue의 배열을 리턴   [9, 2, 5] -> [2, 9, 5]
 		queueLowFirstList = service.getPriorityQueList();
 		

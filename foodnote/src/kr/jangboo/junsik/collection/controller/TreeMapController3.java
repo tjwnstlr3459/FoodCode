@@ -8,6 +8,8 @@ public class TreeMapController3 {
 	public static void main(String args[]) {
 
 		// 3. 트리 맵에서 키를 검색하는 Java 프로그램
+		
+		// TreeMap :
 		// hashMap과는 다르게 트리구조라 키정렬이 되어있고, 오름차순 및 내림차순 또한 다양하게 가능
 		
 		TreeMap<Integer, String> treeMapList = new TreeMap<Integer, String>();
