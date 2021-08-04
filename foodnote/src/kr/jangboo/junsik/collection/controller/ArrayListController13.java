@@ -9,12 +9,13 @@ public class ArrayListController13 {
 		
 		// 13. 두 개의 배열 목록을 비교하는 Java 프로그램
 		
+		//클래스 선언
 		ArrayList<String> arrColorList1 = new ArrayList<String>();
 		ArrayList<String> arrColorList2 = new ArrayList<String>();
 		ArrayList<String> arrayComparison = new ArrayList<String>();
-		
 		ArrayListService13 service = new ArrayListService13();
 			
+		
 		//ArrayList1의 값을 가져온다
 		arrColorList1 = service.getArrayList1();
 		

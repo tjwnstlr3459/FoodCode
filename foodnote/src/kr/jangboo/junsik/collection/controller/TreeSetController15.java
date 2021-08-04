@@ -13,14 +13,16 @@ public class TreeSetController15 {
 		TreeSet<Integer> treeNumList = new TreeSet<Integer>();
 		TreeSetService15 service = new TreeSetService15();
 			
-		//트리
+		//treeNumList의 값을 가져오기
 		treeNumList = service.getTreeSetList();
 
+		//treeNumList의 기본값 출력
 		System.out.println("treeNumList의 값들 : " + treeNumList);
 		
 		//treeNumList의 마지막 값 제거
 		treeNumList.pollLast();
 		
+		//treeNumList의 pollLast 적용된 값 출력
 		System.out.println("마지막 값을 제거한 treeNumList : " + treeNumList);
 	}
 }
