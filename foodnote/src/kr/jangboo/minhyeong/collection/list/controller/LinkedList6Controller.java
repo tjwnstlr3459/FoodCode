@@ -28,8 +28,7 @@ public class LinkedList6Controller {
 		view = new LinkedList6View();
 		
 		dateList.add("Monday");
-		dateList.add("Tuesday");
-		dateList.add("Wednesday");
+		dateList.add("Tuesday");		dateList.add("Wednesday");
 		dateList.add("Thursday");
 		dateList.add("Friday");
 		
