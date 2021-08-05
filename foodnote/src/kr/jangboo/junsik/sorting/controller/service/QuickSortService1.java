@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class QuickSortService1 {
 	
-	
+	//받은 배열을 퀵정렬식으로 정렬하여 리턴
 	public int[] returnSort(int[] nums) {
 
 		//변수 선언
