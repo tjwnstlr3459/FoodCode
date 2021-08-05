@@ -28,13 +28,18 @@ public class QuickSortController1 {
 
 			int count = 0;		//인덱스값 비교시 정렬이 맞으면 카운트
 			
-			nums = service.returnSort(nums);
+			nums = service.returnSort(nums);	//퀵정렬 하기
 			
+			//배열 길이만큼 확인하기
 			for (int j = 0; j < nums.length - 1; j++) {
 
+				//인덱스값 비교해보기
 				if (nums[j] < nums[j + 1]) {
 
+					//정렬 적합시 카운트 업
 					count++;
+					
+					//모든 인덱스 값이 순서가 적합시 출력
 					if (count == nums.length - 1) {
 
 						for (int h : nums) {
