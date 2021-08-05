@@ -24,6 +24,7 @@ public class QuickSortController1 {
 		int nums[] = { 7, 3, 10, 1, 4, 5, 25 };
 
 		
+		//정렬이 적할할때까지 반복
 		while (true) {
 
 			int count = 0;		//인덱스값 비교시 정렬이 맞으면 카운트
