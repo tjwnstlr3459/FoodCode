@@ -29,7 +29,7 @@ public class Sort1Controller {
 		srvc = new Sort1Service();
 		view = new Sort1View();
 		overlapCatch = new HashSet<Integer>();
-		bSortList = new ArrayList<Integer>();
+		bSortList = new ArrayList<>();				// List<타입지정> 했을때 생성/초기화에서 타입을 축약해도된다.
 		sortedList = new ArrayList<Integer>();
 		
 		//정렬 전 list에 랜덤한 값을 넣어준다.(set 사용) 중복 값 없이 10개의 수가 들어가도록 반복한다.

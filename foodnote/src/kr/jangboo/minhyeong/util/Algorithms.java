@@ -1,10 +1,10 @@
-package kr.jangboo.minhyeong.sort.model.service;
+package kr.jangboo.minhyeong.util;
 
 import java.util.List;
 
-public class Sort1Service {
+public class Algorithms {
 
-	private int count;
+	//정렬되지 않는 배열과 배열의 firstIndex와 lastIndex를 매개변수로 넘겨주어 퀵 정렬하는 메소드 > 재귀함수이다.
 	public List<Integer> quickSortToList(List<Integer> sortedList, int first, int last) {
 
 		//제일 왼쪽(처음)을 pivo으로 지정하고 그 다음 자리부터 끝자리와 정렬을 진행한다.
@@ -23,7 +23,6 @@ public class Sort1Service {
 			//
 			return sortedList;
 		}
-		this.count++;
 		
 		//lPin과 rPin이 같거나 조건문에 반대가 되면 즉 pin이 엇갈리면 종료한다.
 		//lPin이 rPin보다 크거나 같아질 때까지 반복 > 즉 엇갈려 lPin이 rPin보다 커지는 경우에 종료한다.
@@ -62,5 +61,4 @@ public class Sort1Service {
 		quickSortToList(sortedList, rPin+1, last);				//새롭게 교체된 pivot을 기준으로 다시 lPin(pivot+1)을 지정해 자신을 다시 호출해 정렬한다.(뒷 분할 정렬)
 		return sortedList;
 	}
-
 }
