@@ -23,7 +23,7 @@ public class SearchController6 {
 	// 4. [ 1 ] 배열값들은 찾는값보다 작은거라 버리고
 	// 5. left에 (기준1)의 값을 넣어,
 
-	// 		 left 	   right
+	//left 	   				right
 	// (기준1)[ 2 ](기준2)[ 3 ]
 
 	// 6. left(기준1) ~ right까지 다시 한번 검색
